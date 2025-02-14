@@ -1,81 +1,108 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import siteConfig from '@/site-config'
-import "@/assets/styles/index.css"
+import '@/assets/styles/index.css'
 ---
 
 <BaseLayout description={siteConfig.description}>
   <article class="prose">
     <p class="text-title titleFont">Yriesの杂货铺</p>
-    <p>Vitesse theme for Astro, supports Vue and UnoCSS.</p>
-    <p>
-      A minimal, SEO-riendly portfolio and blog theme for Astro. It's inspired by <a
-        target="_blank"
-        href="https://antfu.me">antfu.me</a
-      >.
-    </p>
-    <p>
-      <img width="640" height="360" src="/hero.jpg" alt="Hero Image" />
-    </p>
-    <p>
-      Based on first principles thinking, and you can also see from the picture
-      <sup>👆</sup>, the goal of this theme is to
-      <b>make complex things as simple as possible</b>
-      . So, the core of this theme is the content, and the other elements are just auxiliary.
-    </p>
-    <p>Here are the features you don't need to worry about:</p>
-    <ul>
-      <li>100 / 100 Lighthouse performance</li>
-      <li>Responsive</li>
-      <li>SEO-friendly</li>
-      <li>Light / Dark Theme</li>
-      <li>Markdown support</li>
-      <li>
-        <a target="_blank" href="https://mdxjs.com/">MDX</a>
-        (components in your markdown) support
-      </li>
-      <li>
-        <a target="_blank" href="https://vuejs.org/">Vue</a>
-        SFC component support
-      </li>
-      <li>Auto generated sitemap and RSS Feed</li>
-      <li>
-        <a target="_blank" href="https://vueuse.org/">VueUse</a>
-        &
-        <a target="_blank" href="https://lodash.com/">Lodash</a>
-        support
-      </li>
-    </ul>
-    <p>
-      By the way, this theme use the <a target="_blank" href="https://unocss.dev/">UnoCSS</a> for style, it's fast.
-    </p>
-    <p>
-      Visit it
-      <a target="_blank" href="https://github.com/kevinwong865/astro-theme-vitesse"> on GitHub </a>
-      to fork the repository, read the docs or one-click deploy on Netlify.
-    </p>
-    <p>
-      If you like Vitesse theme for Astro, please
-      <a target="_blank" href="https://github.com/kevinwong865"> click follow </a>
-      for me.
-    </p>
-    <hr class="hr-line" />
-    <p>Find me on</p>
-    <p class="flex gap-x-4 gap-y-2 flex-wrap">
-      {
-        siteConfig.socialLinks.map((link) => (
-          <a aria-label={link.text} href={link.href} target="_blank" class="prose-link">
-            <i class:list={[link.icon]} />
-            {link.text}
-          </a>
-        ))
-      }
-    </p>
-    <p>
-      If you have any questions, please email me at
-      <a prose-link aria-label={siteConfig.email} href={`mailto:${siteConfig.email}`}>
-        {siteConfig.email}
-      </a>.
-    </p>
+    <div class="teaTitle">
+      <p>「从Hello World到秃头警告 🌱→👨💻→🦲</p>
+      <p class="textCenter">——这里是我的代码历险记：</p>
+      <p>
+        ✧ 日常打怪升级✨<a href="/blog">blog</a>✨
+        ：记录那些让键盘冒烟的技术骚操作；
+      </p>
+      <p>
+        ✧ 踩坑盲盒开箱✨<a>bug</a
+        >✨：分享「这个bug居然治好了我的强迫症？」的魔幻瞬间；
+      </p>
+      <p>
+        ✧ 赛博茶水间营业✨<a>exchange</a
+        >✨：蹲一波野生大佬互丢技能包，一起把debug人生写成爽文！
+      </p>
+      <p>
+        ✧ 项目实战基地✨<a>build</a>✨：
+        从零到一，复盘那些让人又爱又恨的项目历程；分享如何把创意变成现实，把需求变成作品，把代码变成传奇。
+      </p>
+      <p>
+        ✧ 关于我✨<a>whoami</a>✨：
+        一个在代码世界里摸爬滚打的“技术侠”，擅长用键盘敲出魔法，用代码编织梦想。在这里，我会分享我的成长故事、技术探索和那些不为人知的深夜编程趣事。
+      </p>
+      <p class="endP">
+        （附赠灵魂契約：✨<a>1417630746@qq.com</a>✨）」
+      </p>
+    </div>
+    <img
+      class="imgBox"
+      width="100%"
+      height="600"
+      src="/hero.png"
+      alt="Hero Image"
+    />
   </article>
+  <p>
+    Based on first principles thinking, and you can also see from the picture
+    <sup>👆</sup>, the goal of this theme is to
+    <b>make complex things as simple as possible</b>
+    . So, the core of this theme is the content, and the other elements are just
+    auxiliary.
+  </p>
+  <p>专业技能:</p>
+  <ul>
+    <li>有扎实的前端基础，熟练使用 HTML 、CSS、JS/ES6</li>
+    <li>熟练掌握Vue、Vuex 、React、Uniapp、微信小程序 、Jquery 等开发框架</li>
+    <li>熟练掌握 Element Ul、Antd 、uView、bootstrap 等 UI 框架</li>
+    <li>熟练使用 Typescript 配合前端框架进行开发</li>
+    <li>熟练使用 Echarts 图表库、canvas 画布工具实现数据可视化</li>
+    <li>熟练使用 git 版本管理工具操作，拥有较好的团队开发经验</li>
+  </ul>
+  <p>
+    By the way, this theme use the <a target="_blank" href="https://unocss.dev/"
+      >UnoCSS</a
+    > for style, it's fast.
+  </p>
+  <p>
+    Visit it
+    <a
+      target="_blank"
+      href="https://github.com/kevinwong865/astro-theme-vitesse"
+    >
+      on GitHub
+    </a>
+    to fork the repository, read the docs or one-click deploy on Netlify.
+  </p>
+  <p>
+    If you like Vitesse theme for Astro, please
+    <a target="_blank" href="https://github.com/kevinwong865"> click follow </a>
+    for me.
+  </p>
+  <hr class="hr-line" />
+  <p>Find me on</p>
+  <p class="flex gap-x-4 gap-y-2 flex-wrap">
+    {
+      siteConfig.socialLinks.map((link) => (
+        <a
+          aria-label={link.text}
+          href={link.href}
+          target="_blank"
+          class="prose-link"
+        >
+          <i class:list={[link.icon]} />
+          {link.text}
+        </a>
+      ))
+    }
+  </p>
+  <p>
+    If you have any questions, please email me at
+    <a
+      prose-link
+      aria-label={siteConfig.email}
+      href={`mailto:${siteConfig.email}`}
+    >
+      {siteConfig.email}
+    </a>.
+  </p>
 </BaseLayout>

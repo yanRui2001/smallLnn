@@ -67,3 +67,22 @@ html.dark::view-transition-new(root) {
   font-family: "xiaobai";
   src: url('../assets/fontSize/xiaobai.ttf') format('truetype');
 }
+@font-face {
+  font-family: "chuanqi";
+  src: url('../assets/fontSize/chuanqi.ttf') format('truetype');
+}
+
+#header{
+  img{
+    width: 85px;
+    height: 40px;
+  }
+}
+
+li::before{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}

@@ -47,13 +47,13 @@ export const siteConfig = {
         text: '博客',
         href: '/blog',
       },
-      {
-        text: '笔记',
-        href: '/blog/notes',
-      },
+      // {
+      //   text: '笔记',
+      //   href: '/blog/notes',
+      // },
       {
         text: '关于',
-        href: '/blog/talks',
+        href: '/about',
       },
       {
         text: '项目',
